@@ -1,0 +1,6 @@
+# $Id$
+
+pixmapsdir = $(datadir)/pixmaps
+pixmaps_DATA = spamtrainer.png
+
+EXTRA_DIST = gui.glade ham.png spam.png spamtrainer.png

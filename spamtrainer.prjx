@@ -1,0 +1,54 @@
+<Project name="spamtrainer" description="" newfilesearch="None" enableviewstate="True" version="1.1" projecttype="C#">
+  <Contents>
+    <File name="./NEWS" subtype="Code" buildaction="Nothing" dependson="" data="" />
+    <File name="./README" subtype="Code" buildaction="Nothing" dependson="" data="" />
+    <File name="./New Folder" subtype="Directory" buildaction="Nothing" dependson="" data="" />
+    <File name="./src/MainWindow.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name="./resources/ham.png" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name="./resources/spam.png" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name="./src/Main.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name="./src/AssemblyInfo.cs.in" subtype="Code" buildaction="Nothing" dependson="" data="" />
+    <File name="./TODO" subtype="Code" buildaction="Nothing" dependson="" data="" />
+    <File name="./src/MessageTrainer.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name="./src/PreferencesDialog.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name="./resources/gui.glade" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name="./src/PopupMenu.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name="./src/Constants.cs.in" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name="./src/Makefile.am" subtype="Code" buildaction="Nothing" dependson="" data="" />
+    <File name="./src/Constants.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name="./resources/spamtrainer.png" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name="./src/ConfigReader.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name="./src/ErrorDialog.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name="./New Folder" subtype="Directory" buildaction="Compile" dependson="" data="" />
+    <File name="./data/Makefile.am" subtype="Code" buildaction="Nothing" dependson="" data="" />
+  </Contents>
+  <References>
+    <Reference type="Gac" refto="gtk-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="gdk-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="glib-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="glade-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="pango-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="gnome-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="gconf-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+  </References>
+  <DeploymentInformation target="" script="" strategy="File">
+    <Exclude file="./AssemblyInfo.cs" />
+  </DeploymentInformation>
+  <Configuration runwithwarnings="False" name="Debug">
+    <CodeGeneration runtime="MsNet" compiler="Csc" warninglevel="4" nowarn="" includedebuginformation="True" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" target="Exe" definesymbols="" generatexmldocumentation="False" win32Icon="" />
+    <Execution commandlineparameters="" consolepause="True" />
+    <Output directory="./bin/Debug" assembly="spamtrainer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+  </Configuration>
+  <Configurations active="Debug">
+    <Configuration runwithwarnings="False" name="Debug">
+      <CodeGeneration runtime="MsNet" compiler="Csc" warninglevel="4" nowarn="" includedebuginformation="True" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" target="Exe" definesymbols="" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory="./bin/Debug" assembly="spamtrainer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="False" name="Release">
+      <CodeGeneration runtime="MsNet" compiler="Csc" warninglevel="4" nowarn="" includedebuginformation="True" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" target="Exe" definesymbols="" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory="./bin/Release" assembly="spamtrainer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+  </Configurations>
+</Project>

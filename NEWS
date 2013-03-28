@@ -1,0 +1,20 @@
+0.1.6:
+	Upgraded dependencies to use GTK# 2.
+
+0.1.5:
+	Re-packaged to work with current distros and Mono packages.
+
+0.1.4:
+	Display error dialog if training command fails.
+
+0.1.3:
+	Applied the Evolution 2.0 fix to ham as well as spam.
+
+0.1.2:
+ 	Minor fix to provide compatibility with Evolution 2.0.
+
+0.1.1:
+	Minor fixes to prevent errors when accessing GConf keys.
+
+0.1.0:
+	First public release.

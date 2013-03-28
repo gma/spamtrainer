@@ -1,0 +1,161 @@
+2007-01-12  ashtong  <ashtong@whale>
+
+	* ChangeLog, src/MessageTrainer.cs:
+	Cope with single quotes in filenames.
+
+	* ChangeLog: Update changelog again.
+
+	* src/MessageTrainer.cs:
+	Cope with quotes/spaces in filenames, now that we're running commands via bash.
+
+	* ChangeLog: Updated for 0.1.5.
+
+	* src/MessageTrainer.cs:
+	Explicitly pass training command to the shell (no longer default behaviour).
+
+	* README: Added notes about --prefix and --sysconfdir.
+
+	* NEWS, configure.in, spamtrainer.mdp, spamtrainer.mds, src/AssemblyInfo.cs.in, src/MainWindow.cs, src/PopupMenu.cs:
+	Got the configure script running on Ubuntu Edgy.
+
+2005-11-03  ashtong  <ashtong@whale>
+
+	* ChangeLog: Updated for 0.1.4.
+
+	* Makefile.am, TODO, configure.in, resources/gui.glade, src/Constants.cs.in, src/ErrorDialog.cs, src/MainWindow.cs, src/Makefile.am, src/MessageTrainer.cs, src/PopupMenu.cs, src/PreferencesDialog.cs:
+	Display error dialog if training commands fail.
+	Display tooltip explaining how to use the app.
+	Set the window icon on all windows.
+
+	* README, data/Makefile.am, data/spamtrainer.desktop.in, resources/Makefile.am:
+	General clean ups.
+
+2005-11-02  ashtong  <ashtong@users.sourceforge.net>
+
+	* .cvsignore, spamtrainer.cmbx, spamtrainer.mdp, spamtrainer.mds, spamtrainer.mdsx, spamtrainer.pidb, spamtrainer.prjx:
+	Added MonoDevelop project files.
+
+	* NEWS, configure.in: Bumped version number to 0.1.4.
+
+	* resources/gui.glade, src/MainWindow.cs, src/MessageTrainer.cs:
+	Display error dialog if training command fails.
+
+	* src/PopupMenu.cs: Updated about dialog.
+
+	* src/ErrorDialog.cs: Removed unused member.
+
+2004-10-23  ashtong  <ashtong@users.sourceforge.net>
+
+	* ChangeLog: Prepared for version 0.1.3.
+
+	* NEWS, configure.in: Updated for 0.1.3.
+
+	* src/MainWindow.cs: Fixed ham drop target for evo 2.0.
+
+2004-10-23  ashtong  <ashtong@users.sourceforge.net>
+
+	* NEWS, configure.in: Updated for 0.1.3.
+
+	* src/MainWindow.cs: Fixed ham drop target for evo 2.0.
+
+2004-10-22  ashtong  <ashtong@users.sourceforge.net>
+
+	* NEWS: Added info for 0.1.2.
+
+2004-10-17  ashtong  <ashtong@users.sourceforge.net>
+
+	* configure.in: Bumped version number to 0.1.2.
+
+	* src/MainWindow.cs:
+	Workaround 4 slashes passed in URI from evolution 2.0.
+
+2004-10-01  ashtong  <ashtong@users.sourceforge.net>
+
+	* ChangeLog, NEWS: Prepared for version 0.1.1.
+
+	* README, src/ConfigReader.cs:
+	Don't depend on presence of GConf schema, catch errors instead.
+
+	* configure.in: Prepared for version 0.1.1.
+
+2004-09-28  ashtong  <ashtong@users.sourceforge.net>
+
+	* README: Updated installation instructions.
+
+	* Makefile.am: Set useful automake options.
+
+2004-09-28  ashtong  <ashtong@users.sourceforge.net>
+
+	* README: Updated installation instructions.
+
+	* Makefile.am: Set useful automake options.
+
+2004-09-27  ashtong  <ashtong@users.sourceforge.net>
+
+	* src/MainWindow.cs, src/Makefile.am, Makefile.spamtrainer, TODO, resources/gui.glade, src/ErrorDialog.cs:
+	Display an error dialog if the training commands aren't set.
+
+2004-09-26  ashtong  <ashtong@users.sourceforge.net>
+
+	* Makefile.spamtrainer, TODO, configure.in, resources/gui.glade, src/ConfigReader.cs, src/Main.cs, src/MainWindow.cs, src/Makefile.am, src/MessageTrainer.cs, src/PopupMenu.cs, src/PreferencesDialog.cs:
+	Persist training command in GConf, configured via Preferences dialog.
+
+	* Makefile.spamtrainer, src/.cvsignore, src/Constants.cs.in, src/Main.cs, src/PopupMenu.cs:
+	Added About and Quit to popup menu.
+
+	* src/Makefile.am, Makefile.am, configure.in, resources/Makefile.am, resources/spamtrainer.png:
+	Moved spamtrainer logo/icon from pixmaps/ to resources/.
+
+	* Makefile.am, configure.in, data/.cvsignore, data/Makefile.am, data/spamtrainer.desktop.in, data/spamtrainer.schemas:
+	Added .desktop file, GConf schemas and a logo.
+
+	* TODO: Added note about the window icon.
+
+2004-09-25  ashtong  <ashtong@users.sourceforge.net>
+
+	* NEWS, configure.in, src/AssemblyInfo.cs.in:
+	Changed first version number to 0.1.0.
+
+	* AUTHORS: Added new line.
+
+	* TODO, src/MainWindow.cs: Right click anywhere to popup the menu.
+
+	* Makefile.spamtrainer, src/Main.cs, src/MainWindow.cs, src/Makefile.am, src/MyWindow.cs:
+	Renamed MyWindow to MainWindow.
+
+	* TODO: Added requirements that must be met before a public release.
+
+	* src/Main.cs: Removed unnecessary instation of preferences dialog.
+
+	* README: Added thoughts on customisation.
+
+	* src/MessageTrainer.cs: Use Spambayes' sb_upload.py to train messages.
+
+2004-09-23  ashtong  <ashtong@users.sourceforge.net>
+
+	* src/Main.cs, src/Makefile.am, src/MessageTrainer.cs, src/MyWindow.cs, src/PopupMenu.cs, src/PreferencesDialog.cs, resources/.cvsignore, resources/Makefile.am, resources/gui.glade, Makefile.spamtrainer, configure.in:
+	Added popup menu and preferences dialog (glade).
+
+2004-09-22  ashtong  <ashtong@users.sourceforge.net>
+
+	* Makefile.spamtrainer, src/Main.cs, src/Makefile.am, src/MessageTrainer.cs, src/MyWindow.cs:
+	Added MessageTrainer class.
+
+	* README: Added new line.
+
+2004-09-21  ashtong  <ashtong@users.sourceforge.net>
+
+	* .cvsignore: Ignore MonoDevelop project files.
+
+	* src/AssemblyInfo.cs.in: Fixed typo.
+
+	* README: Improved wording.
+
+	* TODO: New file.
+
+	* .cvsignore, AUTHORS, ChangeLog, Makefile.am, Makefile.solution.spamtrainer, Makefile.spamtrainer, NEWS, README, autogen.sh, configure.in, make.sh, resources/.cvsignore, resources/Makefile.am, resources/ham.png, resources/spam.png, src/.cvsignore, src/AssemblyInfo.cs.in, src/Main.cs, src/Makefile.am, src/MyWindow.cs, src/spamtrainer.in:
+	Imported from source.
+
+	* .cvsignore, AUTHORS, ChangeLog, Makefile.am, Makefile.solution.spamtrainer, Makefile.spamtrainer, NEWS, README, autogen.sh, configure.in, make.sh, resources/.cvsignore, resources/Makefile.am, resources/ham.png, resources/spam.png, src/.cvsignore, src/AssemblyInfo.cs.in, src/Main.cs, src/Makefile.am, src/MyWindow.cs, src/spamtrainer.in:
+	New file.
+

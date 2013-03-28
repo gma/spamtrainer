@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 78
+AssemblyInfo.cs
+Constants.cs
+Makefile
+Makefile.in
+spamtrainer
+spamtrainer.exe
+
+END

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Spam Trainer
+Comment=Train spam filter software by drag-and-drop
+Exec=spamtrainer
+Terminal=false
+Type=Application
+Icon=@iconfile@
+StartupNotify=true
+Categories=GNOME;Application;Utility;

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/spamtrainer/!svn/ver/59/trunk/spamtrainer/resources
+END
+gui.glade
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/spamtrainer/!svn/ver/59/trunk/spamtrainer/resources/gui.glade
+END
+spam.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/spamtrainer/!svn/ver/2/trunk/spamtrainer/resources/spam.png
+END
+ham.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/spamtrainer/!svn/ver/2/trunk/spamtrainer/resources/ham.png
+END
+spamtrainer.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/spamtrainer/!svn/ver/22/trunk/spamtrainer/resources/spamtrainer.png
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/spamtrainer/!svn/ver/58/trunk/spamtrainer/resources/Makefile.am
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/spamtrainer/!svn/ver/11/trunk/spamtrainer/resources/.cvsignore
+END

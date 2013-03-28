@@ -1,0 +1,27 @@
+<gconfschemafile>
+  <schemalist>
+
+    <schema>
+      <key>/schemas/apps/spamtrainer/commands/train_ham</key>
+      <applyto>/apps/spamtrainer/commands/train_ham</applyto>
+      <owner>spamtrainer</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+         <short>Command to run to train a message as ham</short>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/spamtrainer/commands/train_spam</key>
+      <applyto>/apps/spamtrainer/commands/train_spam</applyto>
+      <owner>spamtrainer</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+         <short>Command to run to train a message as spam</short>
+      </locale>
+    </schema>
+
+</schemalist>
+</gconfschemafile>

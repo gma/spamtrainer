@@ -1,0 +1,52 @@
+<Project name="spamtrainer" fileversion="2.0" language="C#" clr-version="Net_1_1" ctype="DotNetProject">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="./bin/Debug" assembly="spamtrainer" />
+      <Build debugmode="True" target="Exe" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" clr-version="Net_1_1" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="./bin/Release" assembly="spamtrainer" />
+      <Build debugmode="True" target="Exe" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" clr-version="Net_1_1" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <DeployTargets />
+  <Contents>
+    <File name="./NEWS" subtype="Code" buildaction="Nothing" />
+    <File name="./README" subtype="Code" buildaction="Nothing" />
+    <File name="./src/MainWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="./resources/ham.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="./resources/spam.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="./src/Main.cs" subtype="Code" buildaction="Compile" />
+    <File name="./src/AssemblyInfo.cs.in" subtype="Code" buildaction="Nothing" />
+    <File name="./TODO" subtype="Code" buildaction="Nothing" />
+    <File name="./src/MessageTrainer.cs" subtype="Code" buildaction="Compile" />
+    <File name="./src/PreferencesDialog.cs" subtype="Code" buildaction="Compile" />
+    <File name="./resources/gui.glade" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="./src/PopupMenu.cs" subtype="Code" buildaction="Compile" />
+    <File name="./src/Constants.cs.in" subtype="Code" buildaction="Compile" />
+    <File name="./src/Makefile.am" subtype="Code" buildaction="Nothing" />
+    <File name="./src/Constants.cs" subtype="Code" buildaction="Compile" />
+    <File name="./resources/spamtrainer.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="./src/ConfigReader.cs" subtype="Code" buildaction="Compile" />
+    <File name="./src/ErrorDialog.cs" subtype="Code" buildaction="Compile" />
+    <File name="./data/Makefile.am" subtype="Code" buildaction="Nothing" />
+    <File name="./configure.in" subtype="Code" buildaction="Nothing" />
+    <File name="./Makefile.am" subtype="Code" buildaction="Nothing" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="gnome-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="gconf-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+  </References>
+  <DeploymentInformation strategy="File">
+    <excludeFiles />
+  </DeploymentInformation>
+</Project>

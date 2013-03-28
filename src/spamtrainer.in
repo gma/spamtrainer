@@ -1,0 +1,4 @@
+#!/bin/sh
+#
+# Wrapper script to run spamtrainer mono program.
+exec @MONO@ @prefix@/lib/@PACKAGE@/spamtrainer.exe "$@"

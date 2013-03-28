@@ -1,0 +1,5 @@
+class Constants {
+	public const string ICONFILE = "@iconfile@";
+	public const string PIXMAPSDIR = "@pixmapsdir@";
+	public const string VERSION = "@VERSION@";
+}

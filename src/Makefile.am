@@ -1,0 +1,53 @@
+# Based on the example in "Mono, A Developer's Notebook", pg. 236.
+#
+# $Id: Makefile.am 59 2005-11-03 22:27:12Z ashtong $
+
+spamwrapdir = $(bindir)
+spamwrap_SCRIPTS = spamtrainer
+
+spamtrainerdir = $(pkglibdir)
+spamtrainer_SCRIPTS = spamtrainer.exe
+
+EXTRA_DIST = $(spamtrainer_sources) $(spamtrainer_sources_in) spamtrainer.in
+
+CLEANFILES = spamtrainer.exe
+DISTCLEANFILES = spamtrainer $(spamtrainer_generated_sources)
+
+spamtrainer_sources_in = AssemblyInfo.cs.in Constants.cs.in
+spamtrainer_generated_sources = $(spamtrainer_sources_in:.in=)
+
+# Substitute variables into Constants module.
+pixmapsdir = $(datadir)/pixmaps
+edit = sed \
+	-e 's,@iconfile\@,$(iconfile),g' \
+	-e 's,@pixmapsdir\@,$(pixmapsdir),g' \
+	-e 's,@VERSION\@,$(VERSION),g'
+
+Constants.cs: Makefile Constants.cs.in
+	rm -f $(srcdir)/Constants.cs
+	$(edit) $(srcdir)/Constants.cs.in > Constants.cs
+
+all: Constants.cs
+
+spamtrainer_sources = \
+	ConfigReader.cs \
+	ErrorDialog.cs \
+	Main.cs \
+	MessageTrainer.cs \
+	MainWindow.cs \
+	PopupMenu.cs \
+	PreferencesDialog.cs
+
+spamtrainer_build_sources = $(addprefix $(srcdir)/, $(spamtrainer_sources))
+spamtrainer_build_sources += $(spamtrainer_generated_sources)
+
+spamtrainer_resources = $(srcdir)/../resources/gui.glade
+spamtrainer_resources += $(srcdir)/../resources/ham.png
+spamtrainer_resources += $(srcdir)/../resources/spam.png
+spamtrainer_resources += $(srcdir)/../resources/spamtrainer.png
+spamtrainer_embedded = $(foreach res,$(spamtrainer_resources),\
+	$(addprefix -resource:,$(res)),$(notdir $(res)))
+
+spamtrainer.exe: $(spamtrainer_build_sources) $(spamtrainer_resources)
+	$(MCS) $(GTKSHARP_LIBS) $(GNOMESHARP_LIBS) $(GLADESHARP_LIBS) \
+	$(spamtrainer_embedded) -out:$@ $(spamtrainer_build_sources)

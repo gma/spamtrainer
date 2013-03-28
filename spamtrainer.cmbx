@@ -1,0 +1,16 @@
+<Combine name="spamtrainer" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="False" name="spamtrainer" />
+    </Configuration>
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="False" name="spamtrainer" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="spamtrainer" single="True">
+    <Execute type="None" entry="spamtrainer" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./spamtrainer.mdp" />
+  </Entries>
+</Combine>
