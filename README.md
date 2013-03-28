@@ -14,7 +14,7 @@ that supports the drag and drop protocol implemented within the GTK+
 toolkit.
 
 Requirements
-============
+------------
 
 Spam Trainer requires GNOME, Mono 1.0 and GTK#. GNOME should be
 available pre-packaged for your operating system (unless you're using
@@ -31,7 +31,7 @@ just as well (it has been tested with Evolution 1.x and 2.x).
 Success/failure reports with other email clients would be most welcome.
 
 Installation
-============
+------------
 
 Pre-compiled packages for your operating system may available.
 
@@ -55,7 +55,7 @@ these directories) but it does mean that GNOME can find all the Spam
 Trainer files properly. Your mileage may vary.
 
 Usage
-=====
+-----
 
 When you run Spam Trainer a small window appears with two icons; one
 representing ham and the other representing spam. Dragging and dropping
@@ -73,7 +73,7 @@ as spam enter:
     sb_filter.py -s < %f
 
 Customization
-=============
+-------------
 
 If you would like to change the icons used to represent ham and spam
 (the defaults aren't very imaginative) just drop some PNG files over the
